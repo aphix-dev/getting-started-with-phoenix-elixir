@@ -1,4 +1,7 @@
 ## Getting Started With the Phoenix Framework for Elixir
+
+
+## Setting Up
 To create a new Phoenix project (assuming that you already have Phoenix installed), you need to use the command
 ```
 mix phx.new <project_name>
@@ -16,6 +19,8 @@ After creating your database, use the command
 mix ecto.migrate
 ```
 to finish up the database setup.
+
+
 
 ## Creating a JSON "Model"
 To create a new JSON Model, you will need to use the command
@@ -45,6 +50,10 @@ show   -> find a certain API element
 update -> update a certain API element
 delete -> delete a certain API element
 ```
+ 
+ 
+ 
+## Routing
 Now, check out the file /lib/<project-name>_web/router.ex file. Uncomment the section that starts with `scope "/api"`. Here, you can handle routes to the `/api` route. Let's define a get router to get all of our books.
 
 Under the part that says `pipe_through :api`, add this line
@@ -53,6 +62,9 @@ get "/books", BookController, :index
 ```
 What this does is makes is so that whenenver we send a GET reqest to `localhost:4000/api/books`, we will call the index function of the BookController, which effectively returns all the items in our book database.
 
+
+
+## Running The Server
 Now, let's run our server using the console command
 ```
 mix phx.server
