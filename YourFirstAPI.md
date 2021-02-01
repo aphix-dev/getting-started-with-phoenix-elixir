@@ -73,7 +73,12 @@ If all is successful, our server will be listening on localhost:4000!
 
 When you visit localhost:4000, you will be greeted with a Phoenix Framework home page, but not our API. Never fear - we just have to visit the correct route on our server. Let's go to localhost:4000/api/books, and you will be greeted by an empty piece of JSON! That means everything is set up correctly!
 
-Now, all we have to do is add some stuff to our database so that we get some elements back from our API. To do so, go to the `/priv/repo/seeds.exs` file and add in the following lines:
+Now, all we have to do is add some stuff to our database so that we get some elements back from our API.
+
+
+
+## Adding Test Elements To Our Database (seeding)
+To add "test" elements to our API, let's add the following lines to the `/priv/repo/seeds.exs` file:
 ```elixir
 # Replace <project-name> with your project name
 # Replace <category-name> with the category you put your model under
