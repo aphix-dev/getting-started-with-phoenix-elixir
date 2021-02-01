@@ -95,4 +95,4 @@ This will create a new Book element in our StoreAPI database so we can see thing
 ```
 mix run priv/repo/seeds/exs
 ```
-Now, let's revisit our `/api/books` router. If all is correct, you will now see our test element in our JSON object!
+Now, let's revisit our `/api/books` route on our server. If all is correct, you will now see our test element in our JSON object!
