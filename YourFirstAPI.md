@@ -46,9 +46,9 @@ schema "books" do
 end 
 ```
 
-Along with this new file created for the model's schema, there will also be a new view file that describes how to render the model (/<Project-Name>_web/<Model-Name>_view). We will leave this alone for now.
+Along with this new file created for the model's schema, there will also be a new view file that describes how to render the model (`/lib/<Project-Name>_web/<Model-Name>_view`). We will leave this alone for now.
 
-Under the /<Project-Name>_web/controllers/ directory, you will notice a new file named <model-name>_controller.ex. This handles the REST methods that we might use in our API.
+Under the `/lib/<Project-Name>_web/controllers/` directory, you will notice a new file named <model-name>_controller.ex. This handles the REST methods that we might use in our API.
 ```
 index  -> get all the API elements
 create -> create a new API element
