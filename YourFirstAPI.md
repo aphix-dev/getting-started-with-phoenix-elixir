@@ -31,7 +31,13 @@ Let's create a new `Book` model.
 ```
 mix phx.gen.json StoreAPI Book books title:string author:string rating:integer
 ```
-Once you have run this command, a new elixir file (/<category-name>/<model-name>.ex) will be created. In here, you have the new model's schema and changeset function. The changeset function is used to validate different fields and require different fields. For each schema key, you can define a default value. Let's use our books model as an example
+Once you have run this command, a new elixir file (`/<category-name>/<model-name>.ex`), or `lib/books_api/store_api/book.ex` will be created. Now, run the command
+```
+mix ecto.migrate
+```
+to migrate your new model to your project's database.
+
+In the new `book.ex` file, you have the new model's schema and changeset function. The changeset function is used to validate different fields and require different fields. For each schema key, you can define a default value. Let's use our books model as an example
 ```elixir
 schema "books" do
  field :title, :string, default: "default_title"
